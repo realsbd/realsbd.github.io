@@ -99,7 +99,7 @@
                   <div class="validation"></div>
                 </div>
               <div class="form-group col-md-6">
-                  <input type="date" class="form-control" name="dob" id="dob" placeholder="Date of Birth" data-rule="DD/MM/YYYY" data-msg="Please enter a valid Date of birth.">
+                  <input type="number" class="form-control" name="dob" id="dob" placeholder="Date of Birth" data-rule="DD/MM/YYYY" data-msg="Please enter a valid Date of birth.">
                   <div class="validation"></div>
               </div>
             </div>
@@ -111,8 +111,12 @@
                     </select>
               </div>
                 <div class="form-group col-md-6">
-                    <input type="text" class="form-control" name="blood" placeholder="Blood Group">
-                </div>
+                        <select class="custom-select">
+                          <option>Gender</option>
+                          <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
             </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -120,7 +124,7 @@
                     </div>
                     <div class="form-group col-md-6">
                         <div class="input-group">
-                            <input type="number" class="form-control" name="height" placeholder="Height">
+                            <input type="text" class="form-control" name="height" placeholder="Height">
                             <div class="input-group-append">
                               <span class="input-group-text" id="inputGroupPrepend">cm</span>
                             </div>
@@ -130,20 +134,34 @@
                   <div class="form-row">
                     <div class="form-group col-md-6">
                         <div class="input-group">
-                            <input type="number" class="form-control" name="weight" placeholder="Weight">
+                            <input type="text" class="form-control" name="weight" placeholder="Weight">
                             <div class="input-group-prepend">
                               <span class="input-group-text" id="inputGroupPrepend">kg</span>
                             </div>
                         </div>
                     </div>
                     <div class="form-group col-md-6">
-                        <select class="custom-select">
-                          <option>Gender</option>
-                          <option>Male</option>
-                            <option>Female</option>
-                        </select>
+                        <input type="text" class="form-control" name="blood" placeholder="Blood Group">
                     </div>
                    </div>
+              <hr>
+              <div class="section-header">
+                  <h3>Next of Kin details</h3>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <input type="text" class="form-control" name="kinname" placeholder="Next of Kin Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <input type="text" class="form-control" name="relationship" placeholder="Relationship with Member">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <input type="email" class="form-control" name="email" placeholder="Email">
+                  </div>
+              </div>
               
             <div class="text-center"><button class="btn btn-primary" type="submit">Submit</button></div>
           </form>
