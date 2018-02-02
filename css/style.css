@@ -127,6 +127,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.new-header {
+    background-color: rgba(0,0,0,0.9);
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -183,6 +187,16 @@ h1, h2, h3, h4, h5, h6 {
   #intro h2 {
     font-size: 28px;
   }
+}
+
+@media (max-width:425px) {
+    #intro h2 {
+        padding-top: 30px;
+    }
+    #intro p {
+        margin: 0 auto 0px auto;
+        line-height: 1.3;
+    }
 }
 
 #intro p {
@@ -1191,6 +1205,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #contact {
   padding: 60px 0;
+}
+
+#register {
+    margin-top: 30px;
+    padding: 60px 0;
 }
 
 #contact .contact-info {
