@@ -1479,3 +1479,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 30px;
     padding: 60px 0;
 }
+
+.counters {
+    padding-left: 50px;
+    margin-left: 100px;
+}
